@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="IdeaPress" Version="1.0.0.0" Publisher="CN=Raymond" />
+  <Identity Name="29686PeterRitchie.PetersBlog" Version="1.0.0.2" Publisher="CN=0AC2E012-410A-435C-9DB8-C016B623B815" />
   <Properties>
-    <DisplayName>IdeaPress</DisplayName>
+    <DisplayName>Peter's Blog</DisplayName>
     <Description>IdeaPress</Description>
-    <PublisherDisplayName>IdeaNotion Development Inc.</PublisherDisplayName>
+    <PublisherDisplayName>Peter Ritchie</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -16,7 +16,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="IdeaPress" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="IdeaPress" ForegroundText="dark" BackgroundColor="#ffffff">
+      <VisualElements DisplayName="Peter's Blog" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="IdeaPress" ForegroundText="dark" BackgroundColor="#ffffff">
         <DefaultTile ShowName="noLogos" WideLogo="images\widelogo.png" ShortName="IdeaPress" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ffffff" />
         <InitialRotationPreference>

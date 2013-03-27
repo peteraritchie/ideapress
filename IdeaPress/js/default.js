@@ -22,7 +22,7 @@ Description: Starting point of the App
 
         // Adding the About Page to the Settings Charm
         e.detail.applicationcommands = {
-            "help": { title: "About Us", href: "/pages/about-flyout.html" }
+            "help": { title: "About", href: "/pages/about-flyout.html" }
         };
         WinJS.UI.SettingsFlyout.populateSettings(e);
 

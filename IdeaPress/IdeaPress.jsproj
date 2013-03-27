@@ -44,9 +44,9 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>IdeaPress_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <PackageCertificateThumbprint>F71EC6F5FD088AB7B83DE514EA717EAE772386F2</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>IdeaPress_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>500ADA74A661985B549A598FC3A1E91C788D4644</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -56,6 +56,7 @@
     <Content Include="css\themes\custom.orange.css" />
     <Content Include="css\themes\custom.dark.css" />
     <Content Include="css\themes\custom.light.css" />
+    <None Include="IdeaPress_StoreKey.pfx" />
     <Content Include="images\badgelogo.png" />
     <Content Include="images\blank.png" />
     <Content Include="images\logo.png" />
@@ -79,13 +80,13 @@
     <Content Include="modules\wordpressCom\css\wpcom.module.css" />
     <Content Include="modules\wordpressCom\css\wpcom.module.detail.css" />
     <Content Include="modules\wordpressCom\css\wpcom.module.section.css" />
-    <Content Include="modules\wordpressCom\js\wpcom.module.searchResults.js" />
     <Content Include="modules\wordpressCom\js\wpcom.module.detail.js" />
     <Content Include="modules\wordpressCom\js\wpcom.module.js" />
+    <Content Include="modules\wordpressCom\js\wpcom.module.searchResults.js" />
     <Content Include="modules\wordpressCom\js\wpcom.module.section.js" />
-    <Content Include="modules\wordpressCom\pages\wpcom.module.searchResults.html" />
     <Content Include="modules\wordpressCom\pages\wpcom.module.detail.html" />
     <Content Include="modules\wordpressCom\pages\wpcom.module.html" />
+    <Content Include="modules\wordpressCom\pages\wpcom.module.searchResults.html" />
     <Content Include="modules\wordpressCom\pages\wpcom.module.section.html" />
     <Content Include="modules\wordpress\css\templates\wide.css" />
     <Content Include="modules\wordpress\css\templates\large.css" />
@@ -101,6 +102,7 @@
     <Content Include="modules\wordpress\pages\wp.module.html" />
     <Content Include="modules\wordpress\pages\wp.module.searchResults.html" />
     <Content Include="modules\wordpress\pages\wp.module.section.html" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="pages\about-flyout.html" />
     <Content Include="pages\hub.html" />
     <None Include="IdeaPress_TemporaryKey.pfx" />
