@@ -336,12 +336,14 @@ wordpressModule.prototype.getPages = function () {
         } else {
             var promises = [];
             var pageData = new Array();
+            var toProcess = self.pageIds.length;
             for (var i in self.pageIds) {
                 promises.push(WinJS.xhr({ type: 'GET', url: fullUrl + self.pageIds[i], headers: headers }).then(function(r) {
                     var data = JSON.parse(r.responseText);
                     if (data.page) { pageData.push(data.page); }
-                    ideaPress.toggleElement(self.loader, "hide");
-                }, function() { err(); }, function() { prog(); }));
+                    toProcess = toProcess - 1;
+                    if (toProcess == 0) ideaPress.toggleElement(self.loader, "hide");
+                }, function () { ideaPress.toggleElement(self.loader, "hide"); err(); }, function () { prog(); }));
             }
             WinJS.Promise.join(promises).then(function () {
                 if (pageData.length > 0) {

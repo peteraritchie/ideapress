@@ -19,7 +19,7 @@ Description: Configures the application and the modules.  Please go to https://g
                 mainUrl: "http://blog.peterritchie.com",         // Main promoting site
                 privacyUrl: "http://blog.peterritchie.com/?page_id=741",      // Privacy URL
                 modules: [
-                    { name: wordpressModule, options: { apiUrl: 'http://blog.peterritchie.com/', title: "Pages", typeId: wordpressModule.PAGES, pageIds: [311, 331, 321] } },
+                    { name: wordpressModule, options: { apiUrl: 'http://blog.peterritchie.com/', title: "Pages", typeId: wordpressModule.PAGES, pageIds: [311, 331] } },
                     { name: wordpressModule, options: { apiUrl: 'http://blog.peterritchie.com/', title: "Recent Posts", typeId: wordpressModule.MOSTRECENT, hubItemsCount : 7 } },
                     { name: wordpressModule, options: { apiUrl: 'http://blog.peterritchie.com/', title: "Bookmark", typeId: wordpressModule.BOOKMARKS } },
                     { name: wordpressModule, options: { apiUrl: 'http://blog.peterritchie.com/', typeid: wordpressModule.CATEGORY, title: ".NET Development", categoryId: 51 } },

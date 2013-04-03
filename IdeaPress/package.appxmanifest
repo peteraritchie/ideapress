@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="29686PeterRitchie.PetersBlog" Version="1.0.0.2" Publisher="CN=0AC2E012-410A-435C-9DB8-C016B623B815" />
+  <Identity Name="29686PeterRitchie.PetersBlog" Version="1.0.0.3" Publisher="CN=0AC2E012-410A-435C-9DB8-C016B623B815" />
   <Properties>
     <DisplayName>Peter's Blog</DisplayName>
     <Description>IdeaPress</Description>
