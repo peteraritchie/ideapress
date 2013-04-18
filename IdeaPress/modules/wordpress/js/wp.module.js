@@ -397,6 +397,7 @@ wordpressModule.prototype.search = function (query) {
 // Check if the app should fetch data
 wordpressModule.prototype.shouldFetch = function (localStorageObject, page) {    
     if (localStorageObject) {
+        if (localStorageObject.version == null || localStorageObject.version < 1) return true;
         if (page && (page > this.maxPagingIndex)) {
             return true;
         }
@@ -430,7 +431,7 @@ wordpressModule.prototype.loadFromStorage = function() {
 
 // Save to the local storage
 wordpressModule.prototype.saveToStorage = function(data) {
-
+    data.version = 1;
     localStorage[this.localStorageKey] = JSON.stringify(data);
 };
 
@@ -559,19 +560,8 @@ wordpressModule.prototype.convertItem = function(item, type) {
     };
 
     // get the first image from attachments
-    res.imgUrl = 'ms-appx:/images/blank.png';
+    res.imgUrl = item.thumbnail != null ? item.thumbnail : 'ms-appx:/images/blank.png';
     res.imgThumbUrl = 'ms-appx:/images/blank.png';
-
-    for (var i in item.attachments) {        
-        if (item.attachments[i].images != null) {
-            res.imgUrl = item.attachments[i].images.full.url;
-            if (item.attachments[i].images.medium) {
-                res.imgThumbUrl = item.attachments[i].images.medium.url;
-            }
-            break;
-        }
-    }
-
 
     var imgUrlStyle = res.imgUrl;
     res.imgUrlStyle = "url('" + imgUrlStyle + "')";
